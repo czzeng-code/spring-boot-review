@@ -1,0 +1,8 @@
+2020-05-13.00:00:22 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStarting:55  Starting UserRepositoryTest on DESKTOP-ZENG with PID 3344 (started by ZENG in F:\Development\spring-boot-review\spring-boot-jpa)
+2020-05-13.00:00:22 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStartupProfileInfo:655  The following profiles are active: dev
+2020-05-13.00:00:36 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStarted:61  Started UserRepositoryTest in 16.011 seconds (JVM running for 19.149)
+2020-05-13.00:00:37 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.userTest:27  User(id=1, username=czz, password=123456, age=21)
+2020-05-13.00:41:25 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStarting:55  Starting UserRepositoryTest on DESKTOP-ZENG with PID 14128 (started by ZENG in F:\Development\spring-boot-review\spring-boot-jpa)
+2020-05-13.00:41:25 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStartupProfileInfo:655  The following profiles are active: dev
+2020-05-13.00:41:39 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.logStarted:61  Started UserRepositoryTest in 15.545 seconds (JVM running for 19.133)
+2020-05-13.00:41:40 INFO  [main] com.soft1851.springboot.jpa.dao.UserRepositoryTest.userTest:27  User(id=2, username=czz, password=123456, age=21)

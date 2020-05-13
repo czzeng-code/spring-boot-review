@@ -1,0 +1,4 @@
+2020-05-12.23:27:41 INFO  [main] com.soft1851.springboot.jpa.SpringBootJpaApplication.logStarting:55  Starting SpringBootJpaApplication on DESKTOP-ZENG with PID 12480 (F:\Development\spring-boot-review\spring-boot-jpa\target\classes started by ZENG in F:\Development\spring-boot-review)
+2020-05-12.23:27:42 INFO  [main] com.soft1851.springboot.jpa.SpringBootJpaApplication.logStartupProfileInfo:655  The following profiles are active: dev
+2020-05-12.23:28:26 INFO  [main] com.soft1851.springboot.jpa.SpringBootJpaApplication.logStarting:55  Starting SpringBootJpaApplication on DESKTOP-ZENG with PID 8960 (F:\Development\spring-boot-review\spring-boot-jpa\target\classes started by ZENG in F:\Development\spring-boot-review)
+2020-05-12.23:28:26 INFO  [main] com.soft1851.springboot.jpa.SpringBootJpaApplication.logStartupProfileInfo:655  The following profiles are active: dev
