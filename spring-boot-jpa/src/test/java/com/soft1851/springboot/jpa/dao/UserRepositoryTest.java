@@ -33,4 +33,16 @@ public class UserRepositoryTest {
         userRepository.delete(userRepository.findByUserName("aa"));
     }
 
+    @Test
+    void testBaseQuery() {
+        userRepository.findAll().forEach(System.out::println);
+        log.info(String.valueOf(userRepository.findById(21L)));
+        log.info("" + userRepository.count());
+        log.info("" + userRepository.existsById(21L));
+
+        userRepository.findByEmailLike("cc@126.com").forEach(System.out::println);
+        System.out.println(userRepository.findByUserNameIgnoreCase("CC"));
+        log.info(userRepository.countByUserName("cc")+"");  //1
+        userRepository.findByUserNameOrderByEmailDesc("cc").forEach(System.out::println);
+    }
 }
