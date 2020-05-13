@@ -18,6 +18,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class User {
 
     @Id
@@ -27,11 +28,11 @@ public class User {
     private String userName;
     @Column(nullable = false)
     private String email;
-    @Column(unique = true)
+    @Column()
     private String passWord;
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     private String nickName;
-    @Column(nullable = false)
+    @Column()
     private String regTime;
 
     public User(String userName, String email, String nickName, String passWord, String regTime) {
