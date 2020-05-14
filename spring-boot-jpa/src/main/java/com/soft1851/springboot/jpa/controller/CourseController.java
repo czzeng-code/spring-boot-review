@@ -14,14 +14,14 @@ import javax.annotation.Resource;
  * @date: 2020/5/14
  * @description:
  */
-@RestController
-@RequestMapping(value = "/api/course")
+//@RestController
+//@RequestMapping(value = "/api/course")
 public class CourseController {
-    @Resource
-    private CourseRepository courseRepository;
-
-    @GetMapping()
-    public Course findCourse(@RequestParam("courseName") String courseName) {
-        return courseRepository.findCourseByCourseName(courseName);
-    }
+//    @Resource
+//    private CourseRepository courseRepository;
+//
+//    @GetMapping()
+//    public Course findCourse(@RequestParam("courseName") String courseName) {
+//        return courseRepository.findCourseByCourseName(courseName);
+//    }
 }

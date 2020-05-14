@@ -14,14 +14,14 @@ import javax.annotation.Resource;
  * @date: 2020/5/14
  * @description:
  */
-@RestController
-@RequestMapping(value = "/api/teacher")
+//@RestController
+//@RequestMapping(value = "/api/teacher")
 public class TeacherController {
-    @Resource
-    private TeacherRepository teacherRepository;
-
-    @GetMapping("/{id}")
-    public Teacher getTeacher(@PathVariable int id) {
-        return teacherRepository.findTeacherByIdEquals(id);
-    }
+//    @Resource
+//    private TeacherRepository teacherRepository;
+//
+//    @GetMapping("/{id}")
+//    public Teacher getTeacher(@PathVariable int id) {
+//        return teacherRepository.findTeacherByIdEquals(id);
+//    }
 }

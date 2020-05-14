@@ -14,14 +14,14 @@ import javax.annotation.Resource;
  * @date: 2020/5/14
  * @description:
  */
-@RestController
-@RequestMapping(value = "/api/clazz")
+//@RestController
+//@RequestMapping(value = "/api/clazz")
 public class ClazzController {
-    @Resource
-    private ClazzRepository clazzRepository;
-
-    @GetMapping("/{id}")
-    public Clazz getClazz(@PathVariable int id) {
-        return clazzRepository.findClazzByIdEquals(id);
-    }
+//    @Resource
+//    private ClazzRepository clazzRepository;
+//
+//    @GetMapping("/{id}")
+//    public Clazz getClazz(@PathVariable int id) {
+//        return clazzRepository.findClazzByIdEquals(id);
+//    }
 }

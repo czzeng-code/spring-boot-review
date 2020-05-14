@@ -21,7 +21,7 @@ import java.util.List;
  * @Date 2020/5/13
  * @Version 1.0
  **/
-@Service
+//@Service
 public class UserDetailServiceImpl implements  UserDetailService{
 
     @Resource

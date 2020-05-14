@@ -12,14 +12,14 @@ import java.util.List;
  * @date: 2020/5/14
  * @description:
  */
-@RestController
-@RequestMapping(value = "/api/student")
+//@RestController
+//@RequestMapping(value = "/api/student")
 public class StudentController {
-    @Resource
-    private StudentRepository studentRepository;
-
-    @GetMapping()
-    public List<Student> getStudents(@RequestParam("clazzId") int id) {
-        return studentRepository.findByClazzId(id);
-    }
+//    @Resource
+//    private StudentRepository studentRepository;
+//
+//    @GetMapping()
+//    public List<Student> getStudents(@RequestParam("clazzId") int id) {
+//        return studentRepository.findByClazzId(id);
+//    }
 }
