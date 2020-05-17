@@ -1,5 +1,6 @@
 package com.soft1851.springboot.schedule.service;
 
+import org.jasypt.encryption.StringEncryptor;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -8,8 +9,6 @@ import javax.mail.MessagingException;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class MailServiceTest {
@@ -51,7 +50,16 @@ class MailServiceTest {
         Map<String, String> imgMap = new HashMap<>();
         imgMap.put("img01", imgPath);
         mailService.sendImgMail(to,subject, content, imgMap);
+    }
 
+    @Resource
+    private StringEncryptor encrypt;
 
+    @Test
+    void name() {
+        String name = encrypt.encrypt("root");
+        String password = encrypt.encrypt("root");
+        System.out.println("database name:"+name);
+        System.out.println("database password:"+password);
     }
 }

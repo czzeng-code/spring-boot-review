@@ -5,13 +5,13 @@ spring:
     host: smtp.qq.com
     port: 25
     username: czzeng_ok@qq.com
-    password: *****
+    password: 12236
     default-encoding: UTF-8
 
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: root
+    username: ENC(dPa6WrqZ1nO36hzroeUHZQ==)
+    password: ENC(3gmBHZlBfnr8iN2yI5mOCw==)
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database: mysql
@@ -20,3 +20,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: update
+jasypt:
+  encryptor:
+    password: secrect

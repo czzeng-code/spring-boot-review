@@ -22,7 +22,7 @@ import java.util.Map;
  * @Date 2020/5/15
  * @Version 1.0
  **/
-@Component
+//@Component
 @Slf4j
 public class BirthdayTask {
     @Resource
