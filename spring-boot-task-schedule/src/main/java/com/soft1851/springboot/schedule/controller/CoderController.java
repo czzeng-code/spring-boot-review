@@ -23,6 +23,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.concurrent.ScheduledFuture;
@@ -39,8 +40,7 @@ public class CoderController {
     @Resource
     private CoderRepository coderRepository;
 
-    @Scheduled(fixedDelay = 3000)
-    @Async
+   
     @GetMapping("/code")
     public void getCode() {
         ServletRequestAttributes sra = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
@@ -48,14 +48,14 @@ public class CoderController {
         HttpServletResponse response = sra.getResponse();
         Coder coder = coderRepository.findById(RandomUtil.randomInt(1, 4)).get();
         String template = "F:/code/{}.jpg";
-        String path = StrUtil.format(template, IdUtil.simpleUUID());
+        String path = StrUtil.format(template, IdUtil.randomUUID());
         HttpUtil.downloadFile(coder.getAvatar(), FileUtil.file(path));
-        BufferedImage image = QrCodeUtil.generate(coder.getUrl(), QrConfig.create().setImg(path));
+        BufferedImage image = QrCodeUtil.generate(coder.getUrl(), QrConfig.create().setImg(path).setBackColor(new Color(255, 255, 255)));
         assert response != null;
         response.setContentType("image/jpeg");
         response.setDateHeader("Expires", 0);
         try {
-            //通过ImageIO将验证码图片通过response的字节输出流传回客户端
+            //通过ImageIO将二维码图片通过response的字节输出流传回客户端
             ImageIO.write(image, "jpg", response.getOutputStream());
         } catch (IOException e) {
             e.printStackTrace();
